@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Support</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Chat Support Test</div>
+      <div class="messages" id="messages"></div>
+      <div class="footer">
+        <div class="input-container">
+          <input type="text" id="jwtToken" placeholder="Enter JWT Token" />
+          <button onclick="connectToChat()">Connect</button>
+        </div>
+        <div class="input-container">
+          <input type="text" id="message" placeholder="Type your message" />
+          <button onclick="sendMessage()">Send</button>
+          <input type="text" id="roomId" placeholder="Add the room id to join" />
+          <button onclick="JoinRoom()">Join</button>
+        </div>
+      </div>
+    </div>
+    <script src="min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
